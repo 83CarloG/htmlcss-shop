@@ -25,7 +25,8 @@
 }
 
 img {
-  z-index: 2;
+  position: relative;
+  z-index: 1;
 }
 
 /* First item */
@@ -58,6 +59,7 @@ li:last-child {
   background: green;
   line-height: 20px;
   text-align: center;
+  z-index: 1;
 }
 /* Red */
 .red {
@@ -79,6 +81,7 @@ li:last-child {
     font-size: 40px;
     z-index: 1;
 }
-.item:hover {
-  z-index: 1;
+img:hover {
+  z-index: 0;
 }
+/* /Heart hover */
