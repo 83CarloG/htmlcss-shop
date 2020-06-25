@@ -5,35 +5,39 @@
   /* For testing only */
   /* border: 1px solid red; */
 }
-
-.first-row {
-  width:1200px;
+/* Main container */
+.container {
+  width:1000px;
   margin: auto;
 }
+/* /Main Container */
 
+/* main features of items */
 .items-list {
+  height: 400px;
+  margin: 10px;
   position: relative;
 }
-/* main features of items */
-
-
 
 .item {
   margin: 5px 5px;
   list-style-type: none;
 }
 
+img {
+  z-index: 2;
+}
+
 /* First item */
 li:first-child {
   position: absolute;
+
 }
-
 /* Second item */
-li:nth-child(2) {
-
+li:nth-of-type(even) {
   position: absolute;
   top: 0%;
-  left: 37%;
+  left: 34.25%;
 }
 /* Third item */
 li:last-child {
@@ -42,12 +46,39 @@ li:last-child {
   right: 0%;
 }
 
+/* Banner Discount */
+/* green */
 .discount {
   position: absolute;
-  width: 40px;
+  display: inline-block;
+  width: 42px;
   height: 20px;
   top: 0px;
   right: 0px;
   background: green;
   line-height: 20px;
+  text-align: center;
+}
+/* Red */
+.red {
+  background: red;
+}
+/* /Banner Discount */
+
+/* Heart hover */
+.heart {
+    position: absolute;
+    display: inline-block;
+    width: 300px;
+    height: 30px;
+    top: 90%;
+    right: 0px;
+    line-height: 20px;
+    text-align: center;
+    color: red;
+    font-size: 40px;
+    z-index: 1;
+}
+.item:hover {
+  z-index: 1;
 }
