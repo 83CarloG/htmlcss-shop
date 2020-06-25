@@ -3,39 +3,51 @@
   margin: 0;
   padding: 0;
   /* For testing only */
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 .first-row {
-  margin: 10px 25px;
+  width:1200px;
+  margin: auto;
 }
 
 .items-list {
-  width: 100%;
   position: relative;
 }
 /* main features of items */
+
+
+
 .item {
-  width: 300px;
-  height: 300px;
   margin: 5px 5px;
   list-style-type: none;
 }
+
 /* First item */
 li:first-child {
-  background: blue;
+  position: absolute;
 }
+
 /* Second item */
 li:nth-child(2) {
-  background: red;
+
   position: absolute;
   top: 0%;
-  left: 40%;
+  left: 37%;
 }
 /* Third item */
 li:last-child {
-  background: green;
   position: absolute;
   top: 0%;
   right: 0%;
+}
+
+.discount {
+  position: absolute;
+  width: 40px;
+  height: 20px;
+  top: 0px;
+  right: 0px;
+  background: green;
+  line-height: 20px;
 }
